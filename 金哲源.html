@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>°®ÐÄ</title>
+    <style type="text/css">
+        *{
+     
+     
+            margin: 0px;
+            border: 0px;
+        }
+        body{
+     
+     
+			overflow: hidden;
+            background-color: #000000;
+        }
+        .container{
+     
+     
+            position: relative;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: 360px;
+            width: 300px;
+            transform-origin: 50% 130%;
+            transform-style: preserve-3d;
+            animation: 8s rotate linear infinite;
+        }
+        @keyframes rotate{
+     
+     
+            from{
+     
+     
+                transform:rotateX(0deg) rotateY(0deg);
+            }
+            to{
+     
+     
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        .square{
+     
+     
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform:translateX(50px) translateY(300px) translateZ(50px);
+            transform-style: preserve-3d;
+        }
+        .square div{
+     
+     
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+        .square div:nth-child(1){
+     
+     
+            top: 200px;
+            transform-origin: top;
+            transform:rotateX(-90deg);
+        }
+        .square div:nth-child(2){
+     
+     
+            left: 200px;
+            transform-origin: left;
+            transform:rotateY(90deg);
+        }
+        .square div:nth-child(3){
+     
+     
+            left: -200px;
+            transform-origin: right;
+            transform:rotateY(-90deg);
+        }
+        .square div:nth-child(4){
+     
+     
+            top: -200px;
+            transform-origin: bottom;
+            transform:rotateX(90deg);
+        }
+        .square div:nth-child(6){
+     
+     
+            top:0;
+            transform:translateZ(-200px);
+        }
+        .square div:nth-child(5){
+     
+     
+
+        }
+        .heart{
+     
+     
+            position: absolute;
+            top:0;
+            left:0;
+            height: 360px;
+            width: 300px;
+            border: 2px solid red;
+            margin: 300px auto;
+            border-radius: 50% 50% 0%/50% 50% 0%;
+            border-bottom: 0;
+            border-left: 0;
+        }
+        img{
+     
+     
+            width: 200px;
+            height:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square">
+            <div><img src="https://s1.328888.xyz/2022/09/21/I0quU.jpg"></div>
+            <div><img src="https://s1.328888.xyz/2022/09/21/I0e3y.jpg"></div>
+            <div><img src="https://s1.328888.xyz/2022/09/21/I07J5.jpg"></div>
+            <div><img src="https://s1.328888.xyz/2022/09/21/I0P3h.jpg"></div>
+            <div><img src="https://s1.328888.xyz/2022/09/21/I0Vxi.jpg"></div>
+            <div><img src="https://s1.328888.xyz/2022/09/18/oVAro.jpg"></div>
+        </div>
+    </div>
+</body>
+</html>
